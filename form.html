@@ -7,8 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <form class="flex items-center justify-center min-h-screen">
-    <div class="h-[1000px] w-atuo bg-green-500 m-4 border-[1px] rounded-md">
+  <form class="flex items-center justify-center min-h-screen mb-6">
+    <div class="h-auto w-auto bg-green-500 mx-4 my-4 border-[1px] rounded-md">
    <div class="flex justify-center m-4">
 <div>
   <img class="h-[70px]" src="clz.logo.png" alt="logo">
@@ -16,30 +16,119 @@
 </div>
     </div>
     <hr>
-    <div class="flex gap-1 mt-4 mx-2">
-      <div class="flex">
-        <input class="p-2 focus:outline-none flex-1 border-[1px] rounded-sm" type="">
+    <div class="mx-4 my-6">
+      <p class="text-[20px] underline font-semibold mb-2">PERSONAL INFORMATION</p>
+      <div>
+        NAME
       </div>
-      <div class="flex">
-        <input class="p-2 flex-1 focus:outline-none border-[1px] rounded-sm" type="">
-      </div>
-      <div class="flex">
-        <input class="p-2 flex-1 focus:outline-none border-[1px] rounded-sm" type="">
+      <div class=" flex gap-1">
+        <div class="flex flex-grow">
+          <input class="p-2 focus:outline-none flex-1 border-[1px] rounded-sm " placeholder="First Name" type="">
+        </div>
+        <div class="flex flex-grow">
+          <input class="p-2 flex-1 focus:outline-none border-[1px] rounded-sm" placeholder="Middle Name" type="">
+        </div>
+        <div class="flex flex-grow">
+          <input class="p-2 flex-1 focus:outline-none border-[1px] rounded-sm" placeholder="Last Name" type="">
+        </div>
       </div>
     </div>
-    <div class="flex gap-1 mt-4 mx-2">
-      <div class="flex">
-        <input class="p-2 flex-1focus:outline-none border-[1px] rounded-l-sm" type="">
-        <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+    <div class="mt-6 mx-4">
+      <div>
+        DATE OF BIRTH
       </div>
-      <div class="flex">
-        <input class="p-2 flex-1 border-[1px] rounded-l-sm" type="">
-        <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+      <div class="flex gap-1">
+        <div class="flex flex-grow">
+          <input class="p-2 flex-1 focus:outline-none border-none rounded-l-sm" placeholder="Month" type="">
+          <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+        </div>
+        <div class="flex flex-grow">
+          <input class="p-2 flex-1 border-none rounded-l-sm focus:outline-none" placeholder="Day" type="">
+          <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+        </div>
+        <div class="flex flex-grow">
+          <input class="p-2 flex-1 border-none rounded-l-sm focus:outline-none" placeholder="Year" type="">
+          <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+        </div>
       </div>
-      <div class="flex">
-        <input class="p-2 flex-1 border-[1px] rounded-l-sm" type="">
-        <select class=" rounded-r-sm focus:outline-none border-none" name="" id=""></select>
+    </div>
+    <div>
+      <div class="mt-6 mx-4">
+        <p>GENDER</p>
+          <div  class="flex gap-12">
+          <div class="flex gap-12">
+            <div class="flex p-2 gap-2"><input type="radio" name="gender">Male</div>
+            <div class="flex p-2 gap-2"><input type="radio" name="gender">Female </div>
+            <div class="flex p-2 gap-2"><input type="radio" name="gender">Other </div>
+          </div>
+            <div class="flex flex-grow"><input class=" flex flex-1 p-2 focus:outline-none border-none rounded-sm" placeholder="Personal number" type="">
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="mt-6 mx-4 flex gap-4">
+      <div class=" flex-1">
+        <p class="">PARENT'S NUMBER</p>
+        <input class="p-2 w-full focus:outline-none border-none rounded-sm" placeholder="Monther's / Father's" type="text">
+      </div>
+     <div class="flex-1">
+      <p>YOUR EMAIL ADDRESS</p>
+      <input class="w-[100%] p-2 focus:outline-none border-none rounded-sm" placeholder="yourname@example@.com" type="email">
+     </div>
+    </div>
+    <div class="mt-6 mx-4 ">
+      <p class="text-[20px] underline font-semibold mb-2">ADDRESS</p>
+      <p class="flex flex-1">PERMANENT ADDRESS</p>
+      <div class="flex"><input class="flex-1 p-2" type="text" placeholder="Including towm, muncipality and distric name "></div>
+    </div>
+    <div class="mt-6 mx-4 flex gap-4">
+      <div class=" flex-1">
+        <p class="">CITY NAME</p>
+        <input class="p-2 w-full focus:outline-none border-none rounded-sm" placeholder="examplekathmandu" type="text">
+      </div>
+     <div class="flex-1">
+      <p>STATE / PROVINCE</p>
+      <input class="w-[100%] p-2 focus:outline-none border-none rounded-sm" placeholder="example Karnali" type="email">
+     </div>
+    </div>
+    <div class="mt-6 mx-4 ">
+      <p class="flex flex-1">TEMPORARY ADDRESS</p>
+      <div class="flex"><input class="flex-1 p-2" type="text" placeholder="Including towm, muncipality and distric name "></div>
+    </div>
+    <div class="mt-6 mx-4 flex gap-4">
+      <div class=" flex-1">
+        <p class="">CITY NAME</p>
+        <input class="p-2 w-full focus:outline-none border-none rounded-sm" placeholder="examplekathmandu" type="text">
+      </div>
+     <div class="flex-1">
+      <p>STATE / PROVINCE</p>
+      <input class="w-[100%] p-2 focus:outline-none border-none rounded-sm" placeholder="example Karnali" type="email">
+     </div>
+    </div>
+    <p class="text-[20px] underline font-semibold mt-6 mx-4 mb-2">EDUCATION</p>
+    <div class="mt-6 mx-4 flex gap-4">
+      <div class="flex-grow">
+        <p>HIGHSCHOOL NAME</p>
+      <input class="w-full p-2 focus:outline-none rounded-sm border-none" type="text">
+      </div>
+      <div class="flex-grow">
+        <P>GRADUATION DATE </P>
+      <input class="w-full p-2 focus:outline-none border-none rounded-sm" placeholder="MM-DD-YY" type="text">
+      </div>
+    </div>
+    <div class="mt-6 mx-4 ">
+      <p class="flex flex-1">SCHOOL ADDRESS</p>
+      <div class="flex"><input class="flex-1 p-2 focus:outline-none" type="text" placeholder="Including towm, muncipality and distric name "></div>
+    </div>
+    <div class="mt-6 mx-4 flex gap-4 mb-6">
+      <div class=" flex-1">
+        <p class="">CITY NAME</p>
+        <input class="p-2 w-full focus:outline-none border-none rounded-sm" placeholder="" type="text">
+      </div>
+     <div class="flex-1">
+      <p>STATE / PROVINCE</p>
+      <input class="w-[100%] p-2 focus:outline-none border-none rounded-sm" placeholder="" type="email">
+     </div>
     </div>
     </div>
   </form>
